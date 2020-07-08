@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="citys">
+        <d1>广东</d1>
+        <dd>广州</dd> 
+        <dd>深圳</dd>   
+        <d1>湖南</d1>
+        <dd>长沙</dd>
+        <dd>衡阳</dd>
+    </div>
+    <script>
+        document.getElementById("citys").onclick = 
+        function ({ target: {tagName, style } }) {
+            if (tagName == "d1") {
+      style.color = style.color == "" ? "blue" : "";
+     }
+ }
+
+        
+    </script>
+</body>
+</html>
